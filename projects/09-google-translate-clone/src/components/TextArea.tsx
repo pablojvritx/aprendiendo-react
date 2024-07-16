@@ -8,7 +8,7 @@ interface Props {
   value: string
 }
 
-const commonStyles = { border: 0, height: '200px' }
+const commonStyles: React.CSSProperties = { height: "10rem", border: 0, resize: "none" };
 
 const getPlaceholder = ({ type, loading }: { type: SectionType, loading?: boolean }) => {
   if (type === SectionType.From) return 'Introducir texto'
